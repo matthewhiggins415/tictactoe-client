@@ -3,15 +3,77 @@
     <head>
       <title>Example</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="styles.css">
 
       <!-- Do not add `link` tags-->
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-
       <!-- Do not add `script` tags-->
       <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Browser Template</h1>
+      <section class="board-view">
+        <h1>Tic-Tac-Toe</h1>
+
+
+        <div class="board-container">
+          <div class="players">
+            <h4 class="playerX">Player 1</h4>
+            <h4 class="playerO">Player 2</h4>
+          </div>
+          <div>
+              <p class="message">Player One Wins</p>
+          </div>
+
+          <div class="board">
+            <div class="space" id="one">
+            </div>
+            <div class="space" id="two">
+            </div>
+            <div class="space" id="three">
+            </div>
+            <div class="space" id="four">
+            </div>
+            <div class="space" id="five">
+            </div>
+            <div class="space" id="six">
+            </div>
+            <div class="space" id="seven">
+            </div>
+            <div class="space" id="eight">
+            </div>
+            <div class="space" id="nine">
+            </div>
+          </div>
+          <button class="new-game-btn" id="new-game-btn">New Game</button>
+          <button class="logout-btn" id="logout-btn">
+            Logout
+          </button>
+        </div>
+      </section>
+
+      <section class="login-view">
+
+        <form class="login-form">
+                  <h2>Sign up to play</h2>
+          <input class="login-input" placeholder="email" type="email" required>
+          <input class="login-input" placeholder="password" type="password" required>
+          <input class="login-input" placeholder="confirm password" type="password" required>
+          <button class="signup-button">Sign-Up</button>
+          <button class="to-otherpage-button">Existing member? Login</button>
+        </form>
+      </section>
+
+      <section id="signin-view" class="login-view">
+
+        <form id="signin-form" class="login-form">
+          <h2>Sign in to play</h2>
+          <input id="signin-input" class="login-input" placeholder="email" type="email" required>
+          <input id="signin-input" class="login-input" placeholder="password" type="password" required>
+          <button id="signin-button" class="signup-button">Sign In</button>
+          <button class="to-otherpage-button">New member? Sign Up</button>
+
+        </form>
+      </section>
     </body>
 </html>

@@ -1,0 +1,213 @@
+.board-view {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background-color: rgb(255, 246, 246);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.board-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 3px 3px 5px tomato;
+  height: auto;
+  width: 50vw;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+
+.players {
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  width: 50vw;
+  border-radius: 25px;
+}
+
+.new-game-btn {
+  width: 50%;
+  margin: 5px auto;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: white;
+  transition: 200ms ease-in-out;
+  padding: 15px;
+}
+
+.new-game-btn:hover{
+  cursor: pointer;
+  background-color: tomato;
+  border: 1px solid tomato;
+  color: white;
+}
+
+.board {
+  display: flex;
+  width: 50%;
+  height: auto;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  border-radius: 10px;
+}
+
+.space {
+  flex-grow: 1;
+  height: 100px;
+  width: 25%;
+  background-color: white;
+}
+
+.space:hover{
+  cursor: pointer;
+  background-color: rgb(255, 247, 246);;
+
+}
+
+#one, #two, #three {
+  border-bottom: 3px solid tomato;
+
+}
+
+#one {
+  border-top-left-radius: 10px;
+}
+
+#three {
+  border-top-right-radius: 10px;
+}
+
+#seven {
+  border-bottom-left-radius: 10px;
+}
+
+#nine {
+  border-bottom-right-radius: 10px;
+}
+
+
+
+#one, #four, #seven {
+  border-right: 3px solid tomato;
+}
+
+#three, #six, #nine {
+  border-left: 3px solid tomato;
+}
+
+#seven, #eight, #nine {
+  border-top: 3px solid tomato;
+}
+
+.logout-btn {
+  padding: 15px;
+  width: 50%;
+  margin: 30px auto;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: white;
+  transition: 200ms ease-in-out;
+}
+
+.logout-btn:hover{
+  cursor: pointer;
+  background-color: tomato;
+  border: 1px solid tomato;
+  color: white;
+}
+
+.login-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(255, 247, 246);
+}
+
+
+.login-view h2 {
+  text-align: center;
+  color: black;
+  letter-spacing: 1.5px;
+}
+
+.login-form{
+  width: 30%;
+  height: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 3px 5px tomato;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+  transition: 300ms ease-in-out;
+  background-color: white;
+}
+
+.login-form:hover {
+  box-shadow: 5px 5px 9px tomato;
+  transform: scale(1.01);
+}
+
+.login-input {
+  width:50%;
+  padding: 15px;
+  margin: 10px auto;
+  border-radius: 10px;
+   border: 1px solid black;
+   transition: 200ms ease-in-out;
+}
+
+input:focus {
+  border: 1px solid tomato;
+  outline: none;
+}
+
+input[type="password"], input[type="email"] {
+  color: tomato;
+}
+
+input:valid {
+  border: 1px solid tomato
+}
+
+.signup-button {
+  padding: 15px;
+  width: 50%;
+  margin: 10px auto;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: white;
+  transition: 200ms ease-in-out;
+}
+.signup-button:hover{
+  cursor: pointer;
+  background-color: tomato;
+  border: 1px solid tomato;
+  color: white;
+}
+
+
+.to-otherpage-button {
+  width: fit-content;
+  margin: 0 auto;
+  background-color: white;
+  padding: 2px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.to-otherpage-button:hover{
+  color: tomato;
+}
+
+.to-otherpage-button:hover {
+  border-bottom: 1px solid tomato;
+}
