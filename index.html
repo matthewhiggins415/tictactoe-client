@@ -3,7 +3,6 @@
     <head>
       <title>Example</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" type="text/css" href="styles.css">
 
       <!-- Do not add `link` tags-->
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -12,17 +11,14 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <section class="board-view">
-        <h1>Tic-Tac-Toe</h1>
-
-
+      <section class="board-view" id="board-view">
         <div class="board-container">
           <div class="players">
-            <h4 class="playerX">Player 1</h4>
-            <h4 class="playerO">Player 2</h4>
+            <h4 class="player">Player 1</h4>
+            <h4 class="player">Player 2</h4>
           </div>
-          <div>
-              <p class="message">Player One Wins</p>
+          <div id="message">
+              <p>Player One Wins</p>
           </div>
 
           <div class="board">
@@ -52,28 +48,25 @@
         </div>
       </section>
 
-      <section class="login-view">
-
-        <form class="login-form">
-                  <h2>Sign up to play</h2>
-          <input class="login-input" placeholder="email" type="email" required>
-          <input class="login-input" placeholder="password" type="password" required>
-          <input class="login-input" placeholder="confirm password" type="password" required>
-          <button class="signup-button">Sign-Up</button>
-          <button class="to-otherpage-button">Existing member? Login</button>
+      <section id="signup-view" class="login-view">
+        <form class="login-form" id="signup-form">
+          <h2>Sign up to play</h2>
+          <input class="login-input" name="credentials[email]" placeholder="email" type="email" required>
+          <input class="login-input" name="credentials[password]" placeholder="password" type="password" required>
+          <input class="login-input" name="credentials[password_confirmation]" placeholder="confirm password" type="password" required>
+          <button class="signup-button" id="signup-button">Sign Up</button>
         </form>
+        <button class="to-otherpage-button" id="toLoginBtn">Existing member? Login</button>
       </section>
 
       <section id="signin-view" class="login-view">
-
         <form id="signin-form" class="login-form">
           <h2>Sign in to play</h2>
-          <input id="signin-input" class="login-input" placeholder="email" type="email" required>
-          <input id="signin-input" class="login-input" placeholder="password" type="password" required>
+          <input id="signin-input" class="login-input" name="credentials[email]" placeholder="email" type="email" required>
+          <input id="signin-input" class="login-input" name="credentials[password]" placeholder="password" type="password" required>
           <button id="signin-button" class="signup-button">Sign In</button>
-          <button class="to-otherpage-button">New member? Sign Up</button>
-
         </form>
+        <button class="to-otherpage-button" id="toSigninBtn">New member? Sign Up</button>
       </section>
     </body>
 </html>

@@ -42,11 +42,11 @@ Section 2 - Scope.
 
 License grant.
 Subject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:
-reproduce and Share the Licensed Material, in whole or in part, for NonCommercial purposes only; and
+reproduce and Share the Licensed Material, in whole or in part, for NonCommercial purposes only  and
 produce, reproduce, and Share Adapted Material for NonCommercial purposes only.
 Exceptions and Limitations. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this Public License does not apply, and You do not need to comply with its terms and conditions.
 Term. The term of this Public License is specified in Section 6(a).
-Media and formats; technical modifications allowed. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a)(4) never produces Adapted Material.
+Media and formats  technical modifications allowed. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a)(4) never produces Adapted Material.
 Downstream recipients.
 Offer from the Licensor - Licensed Material. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.
 Additional offer from the Licensor - Adapted Material. Every recipient of Adapted Material from You automatically receives an offer from the Licensor to exercise the Licensed Rights in the Adapted Material under the conditions of the Adapter's License You apply.
@@ -54,7 +54,7 @@ No downstream restrictions. You may not offer or impose any additional or differ
 No endorsement. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i).
 Other rights.
 
-Moral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.
+Moral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights  however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.
 Patent and trademark rights are not licensed under this Public License.
 To the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties, including when the Licensed Material is used other than for NonCommercial purposes.
 Section 3 - License Conditions.
@@ -66,12 +66,12 @@ Attribution.
 If You Share the Licensed Material (including in modified form), You must:
 
 retain the following if it is supplied by the Licensor with the Licensed Material:
-identification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);
-a copyright notice;
-a notice that refers to this Public License;
-a notice that refers to the disclaimer of warranties;
-a URI or hyperlink to the Licensed Material to the extent reasonably practicable;
-indicate if You modified the Licensed Material and retain an indication of any previous modifications; and
+identification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated)
+a copyright notice
+a notice that refers to this Public License
+a notice that refers to the disclaimer of warranties
+a URI or hyperlink to the Licensed Material to the extent reasonably practicable
+indicate if You modified the Licensed Material and retain an indication of any previous modifications  and
 indicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.
 You may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.
 If requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable.
@@ -85,8 +85,8 @@ Section 4 - Sui Generis Database Rights.
 
 Where the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:
 
-for the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database for NonCommercial purposes only;
-if You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material, including for purposes of Section 3(b); and
+for the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database for NonCommercial purposes only
+if You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material, including for purposes of Section 3(b)  and
 You must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.
 For the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.
 Section 5 - Disclaimer of Warranties and Limitation of Liability.
@@ -99,10 +99,10 @@ Section 6 - Term and Termination.
 This Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this Public License, then Your rights under this Public License terminate automatically.
 Where Your right to use the Licensed Material has terminated under Section 6(a), it reinstates:
 
-automatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or
+automatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation  or
 upon express reinstatement by the Licensor.
 For the avoidance of doubt, this Section 6(b) does not affect any right the Licensor may have to seek remedies for Your violations of this Public License.
-For the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.
+For the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time  however, doing so will not terminate this Public License.
 Sections 1, 5, 6, 7, and 8 survive termination of this Public License.
 Section 7 - Other Terms and Conditions.
 
@@ -137,7 +137,7 @@ to take away your freedom to share and change the works.  By contrast,
 the GNU General Public License is intended to guarantee your freedom to
 share and change all versions of a program--to make sure it remains free
 software for all its users.  We, the Free Software Foundation, use the
-GNU General Public License for most of our software; it applies also to
+GNU General Public License for most of our software  it applies also to
 any other work released this way by its authors.  You can apply it to
 your programs, too.
 
@@ -295,7 +295,7 @@ and control, on terms that prohibit them from making any copies of
 your copyrighted material outside their relationship with you.
 
   Conveying under any other circumstances is permitted solely under
-the conditions stated below.  Sublicensing is not allowed; section 10
+the conditions stated below.  Sublicensing is not allowed  section 10
 makes it unnecessary.
 
   3. Protecting Users' Legal Rights From Anti-Circumvention Law.
@@ -318,10 +318,10 @@ technological measures.
 
   You may convey verbatim copies of the Program's source code as you
 receive it, in any medium, provided that you conspicuously and
-appropriately publish on each copy an appropriate copyright notice;
+appropriately publish on each copy an appropriate copyright notice
 keep intact all notices stating that this License and any
-non-permissive terms added in accord with section 7 apply to the code;
-keep intact all notices of the absence of any warranty; and give all
+non-permissive terms added in accord with section 7 apply to the code
+keep intact all notices of the absence of any warranty  and give all
 recipients a copy of this License along with the Program.
 
   You may charge any price or no price for each copy that you convey,
@@ -350,7 +350,7 @@ terms of section 4, provided that you also meet all of these conditions:
     invalidate such permission if you have separately received it.
 
     d) If the work has interactive user interfaces, each must display
-    Appropriate Legal Notices; however, if the Program has interactive
+    Appropriate Legal Notices  however, if the Program has interactive
     interfaces that do not display Appropriate Legal Notices, your
     work need not make them do so.
 
@@ -485,21 +485,21 @@ add to a covered work, you may (if authorized by the copyright holders of
 that material) supplement the terms of this License with terms:
 
     a) Disclaiming warranty or limiting liability differently from the
-    terms of sections 15 and 16 of this License; or
+    terms of sections 15 and 16 of this License  or
 
     b) Requiring preservation of specified reasonable legal notices or
     author attributions in that material or in the Appropriate Legal
-    Notices displayed by works containing it; or
+    Notices displayed by works containing it  or
 
     c) Prohibiting misrepresentation of the origin of that material, or
     requiring that modified versions of such material be marked in
-    reasonable ways as different from the original version; or
+    reasonable ways as different from the original version  or
 
     d) Limiting the use for publicity purposes of names of licensors or
-    authors of the material; or
+    authors of the material  or
 
     e) Declining to grant rights under trademark law for use of some
-    trade names, trademarks, or service marks; or
+    trade names, trademarks, or service marks  or
 
     f) Requiring indemnification of licensors and authors of that
     material by anyone who conveys the material (or modified versions of
@@ -523,7 +523,7 @@ additional terms that apply to those files, or a notice indicating
 where to find the applicable terms.
 
   Additional terms, permissive or non-permissive, may be stated in the
-form of a separately written license, or stated as exceptions;
+form of a separately written license, or stated as exceptions
 the above requirements apply either way.
 
   8. Termination.
@@ -750,7 +750,7 @@ free software which everyone can redistribute and change under these terms.
 
   To do so, attach the following notices to the program.  It is safest
 to attach them to the start of each source file to most effectively
-state the exclusion of warranty; and each file should have at least
+state the exclusion of warranty  and each file should have at least
 the "copyright" line and a pointer to where the full notice is found.
 
     This software is Copyright (C) General Assembly, Inc. Licensing year is
@@ -762,7 +762,7 @@ the "copyright" line and a pointer to where the full notice is found.
     (at your option) any later version.
 
     This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    but WITHOUT ANY WARRANTY  without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
@@ -775,13 +775,13 @@ Also add information on how to contact you by electronic and paper mail.
 notice like this when it starts in an interactive mode:
 
     General Assembly Web Development Immersive 50, NYC  Copyright (C) 2016  Joe Johnson
-    This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
+    This program comes with ABSOLUTELY NO WARRANTY  for details type `show w'.
     This is free software, and you are welcome to redistribute it
-    under certain conditions; type `show c' for details.
+    under certain conditions  type `show c' for details.
 
 The hypothetical commands `show w' and `show c' should show the appropriate
 parts of the General Public License.  Of course, your program's commands
-might be different; for a GUI interface, you would use an "about box".
+might be different  for a GUI interface, you would use an "about box".
 
   You should also get your employer (if you work as a programmer) or school,
 if any, to sign a "copyright disclaimer" for the program, if necessary.

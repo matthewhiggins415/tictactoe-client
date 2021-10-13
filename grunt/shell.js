@@ -3,10 +3,10 @@
 // proceed. If `.gitingore` is missing or `node_modules` is tracked, it will
 // exit with a message telling them to seek adult supervision
 const checkGitIgnore = `
- if !(git ls-files --error-unmatch node_modules) && [ -f .gitignore ];
-   then true;
+ if !(git ls-files --error-unmatch node_modules) && [ -f .gitignore ]
+   then true
    else printf "\n\nWARNING: .gitignore is wrong or missing.
-   Ask an instructor for assistance!\n\n" && false; fi
+   Ask an instructor for assistance!\n\n" && false  fi
 `
 
 const ghPagesList = [

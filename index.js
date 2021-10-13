@@ -1,12 +1,12 @@
 // user require with a reference to bundle the file and use it in this file
-// var example = require('./example');
+// var example = require('./example')
 
 // allows usage of new JS features
-require("babel-polyfill");
+require("babel-polyfill")
 
 // load manifests
 // javascript entry point
-require("./app/app.js");
+require("./app/app.js")
 
 // styles
-require("./app/styles/styles.css");
+require("./app/styles/index.scss")
