@@ -32,13 +32,19 @@ const signOutFailure = (error) => {
   console.log(error.message)
 }
 
-const signInSuccess = (responseData) => {
+const getTokenSuccess = (responseData) => {
   let token = responseData.user.token
-  console.log(responseData)
-  console.log(token)
-  console.log(store)
   store.user.token = token
   console.log(store)
+}
+
+const getTokenFailure = (error) => {
+  console.log(error.message)
+}
+
+const signInSuccess = (responseData) => {
+  let token = responseData.user.token
+  store.user.token = token
   $("#signin-view").fadeOut()
   $("#board-view").fadeIn()
   showAMessage("Sign in successful!")
@@ -54,5 +60,7 @@ module.exports = {
   signOutSuccess,
   signOutFailure,
   signInSuccess,
-  signInFailure
+  signInFailure,
+  getTokenSuccess,
+  getTokenFailure
 }

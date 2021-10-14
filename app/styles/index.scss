@@ -70,6 +70,20 @@
   background-color: white;
 }
 
+.Xspace {
+  flex-grow: 1;
+  height: 100px;
+  width: 25%;
+  background-color: purple;
+}
+
+.Ospace {
+  flex-grow: 1;
+  height: 100px;
+  width: 25%;
+  background-color: blue;
+}
+
 .space:hover{
   cursor: pointer;
   background-color: rgb(255, 247, 246);;
@@ -96,8 +110,6 @@
 #nine {
   border-bottom-right-radius: 10px;
 }
-
-
 
 #one, #four, #seven {
   border-right: 3px solid tomato;
