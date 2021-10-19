@@ -1,4 +1,13 @@
 // @import '~bootstrap/scss/bootstrap';
+*{
+  box-sizing: border-box;
+}
+
+//Create variable for each space.
+:root {
+  --space-size: 100px;
+  --mark-size: calc(var(--space-size) * .9)
+}
 
 .board-view {
   height: 100vh;
@@ -55,73 +64,115 @@
 }
 
 .board {
-  display: flex;
-  width: 50%;
-  height: auto;
-  flex-wrap: wrap;
+  width: 50vw;
+  height: 50vh;
+  display: grid;
   margin: 50px auto;
-  border-radius: 10px;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, auto);
 }
 
 .space {
-  flex-grow: 1;
-  height: 100px;
-  width: 25%;
+  border: 1px solid black;
+  width: var(--space-size);
+  height: var(--space-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.space:first-child,
+.space:nth-child(2),
+.space:nth-child(3) {
+  border-top: none;
+}
+
+.space:nth-child(7),
+.space:nth-child(8),
+.space:nth-child(9) {
+  border-bottom: none;
+}
+
+.space:first-child,
+.space:nth-child(4),
+.space:nth-child(7) {
+  border-left: none;
+}
+
+.space:nth-child(3),
+.space:nth-child(6),
+.space:nth-child(9) {
+  border-right: none;
+}
+
+.space.x, .space.circle {
+  cursor: not-allowed;
+}
+
+.space.x::before,
+.space.x::after,
+.board.x .space:not(.x):not(.circle):hover::before,
+.board.x .space:not(.x):not(.circle):hover:after
+{
+  position: absolute;
+  content: "";
+  width: calc(var(--mark-size) * .15);
+  height: var(--mark-size);
+  background-color: tomato;
+}
+
+.space.x::before,
+.board.x .space:not(.x):not(.circle):hover::before {
+  transform: rotate(45deg);
+}
+
+.space.x::after,
+.board.x .space.space:not(.circle):not(.x):hover::after {
+  transform: rotate(-45deg);
+}
+
+.board.x .space:not(.x):not(.circle):hover::before,
+.board.x .space:not(.x):not(.circle):hover::after,
+.board.circle .space:not(.circle):not(.x):hover::before,
+.board.circle .space:not(.circle):not(.x):hover::after
+{
+  background-color: rgb(251, 205, 191);
+}
+
+.space.circle::before,
+.space.circle::after{
+  background-color: tomato;
+}
+
+
+.space.circle::before,
+.space.circle::after,
+.board.circle .space:not(.circle):not(.x):hover::before,
+.board.circle .space:not(.circle):not(.x):hover::after
+{
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+
+.space.circle::before,
+.board.circle .space:not(.circle):not(.x):hover::before {
+  width: var(--mark-size);
+  height: var(--mark-size);
+}
+
+.space.circle::after,
+.board.circle .space:not(.circle):not(.x):hover::after
+{
+  width: calc(var(--mark-size) * .7);
+  height: calc(var(--mark-size) * .7);
   background-color: white;
 }
 
-.Xspace {
-  flex-grow: 1;
-  height: 100px;
-  width: 25%;
-  background-color: purple;
-}
-
-.Ospace {
-  flex-grow: 1;
-  height: 100px;
-  width: 25%;
-  background-color: blue;
-}
-
-.space:hover{
-  cursor: pointer;
-  background-color: rgb(255, 247, 246);;
-
-}
-
-#one, #two, #three {
-  border-bottom: 3px solid tomato;
-
-}
-
-#one {
-  border-top-left-radius: 10px;
-}
-
-#three {
-  border-top-right-radius: 10px;
-}
-
-#seven {
-  border-bottom-left-radius: 10px;
-}
-
-#nine {
-  border-bottom-right-radius: 10px;
-}
-
-#one, #four, #seven {
-  border-right: 3px solid tomato;
-}
-
-#three, #six, #nine {
-  border-left: 3px solid tomato;
-}
-
-#seven, #eight, #nine {
-  border-top: 3px solid tomato;
-}
 
 .logout-btn {
   padding: 15px;
@@ -149,7 +200,6 @@
   width: 100vw;
   background-color: rgb(255, 247, 246);
 }
-
 
 .login-view h2 {
   text-align: center;

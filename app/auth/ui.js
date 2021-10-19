@@ -55,6 +55,7 @@ const signInFailure = (error) => {
 }
 
 module.exports = {
+  showAMessage,
   signUpSuccess,
   signUpFailure,
   signOutSuccess,
