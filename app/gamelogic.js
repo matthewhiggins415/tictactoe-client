@@ -6,7 +6,7 @@ const oClass = 'circle';
 const messageElement = $("#message")
 
 const showAMessage = (message) => {
-  messageElement.text(`${message}`).show
+  messageElement.text(`${message}`)
   setTimeout(function() {
     messageElement.remove()
   }, 6000)
@@ -68,8 +68,7 @@ const clearBoard = () => {
   cellSeven.removeClass('circle x')
   cellEight.removeClass('circle x')
   cellNine.removeClass('circle x')
-  addFunc()
-  let circleTurn = false
+  startGame()
 }
 
 const handleClick = (e) => {
@@ -78,15 +77,13 @@ const handleClick = (e) => {
   addMark(cell, activeClass)
   changeTurn()
   //determine WIN
-  checkWin()
   if (checkWin()){
     endGame()
   }
   //determine tie
-  checkTie()
   if (checkTie()) {
     endGame()
-    showAMessage('Tie Game!')
+    alert('Tie Game!')
   }
 }
 
@@ -105,65 +102,60 @@ cellNine.one('click', handleClick)
 
 const checkWin = () => {
   if (cellOne.hasClass('x') && cellTwo.hasClass('x') && cellThree.hasClass('x')){
-    showAMessage('x wins!')
+    alert('x wins!')
     console.log('winner!!')
     return true
   } else if (cellOne.hasClass('circle') && cellTwo.hasClass('circle') && cellThree.hasClass('circle')) {
-    showAMessage('o wins!')
+    alert('o wins!')
     console.log('winner!!')
     return true
   } else if (cellFour.hasClass('x') && cellFive.hasClass('x') && cellSix.hasClass('x')) {
-    showAMessage('x wins!')
+    alert('x wins!')
     console.log('winner!!')
     return true
   } else if (cellFour.hasClass('circle') && cellFive.hasClass('circle') && cellSix.hasClass('circle')) {
-    showAMessage('o wins!')
+    alert('o wins!')
     console.log('winner!!')
     return true
   } else if (cellSeven.hasClass('x') && cellEight.hasClass('x') && cellNine.hasClass('x')) {
-    showAMessage('x wins!')
+    alert('x wins!')
     console.log('winner!!')
     return true
   } else if (cellSeven.hasClass('circle') && cellEight.hasClass('circle') && cellNine.hasClass('circle')) {
-    showAMessage('o wins!')
+    alert('o wins!')
     console.log('winner!!')
     return true
   } else if (cellOne.hasClass('x') && cellFive.hasClass('x') && cellNine.hasClass('x')) {
-    showAMessage('x wins!')
+    alert('x wins!')
     console.log('winner!!')
     return true
   } else if (cellOne.hasClass('circle') && cellFive.hasClass('circle') && cellNine.hasClass('circle')) {
-    showAMessage('o wins!')
+    alert('o wins!')
     console.log('winner!!')
     return true
   } else if (cellOne.hasClass('x') && cellFour.hasClass('x') && cellSeven.hasClass('x')) {
-    showAMessage('x wins!')
+    alert('x wins!')
     console.log('winner!!')
     return true
   } else if (cellOne.hasClass('circle') && cellFour.hasClass('circle') && cellSeven.hasClass('circle')) {
-    showAMessage('o wins!')
+    alert('o wins!')
     console.log('winner!!')
-
     return true
   } else if (cellTwo.hasClass('x') && cellFive.hasClass('x') && cellEight.hasClass('x')) {
-    showAMessage('x wins!')
+    alert('x wins!')
     console.log('winner!!')
-
     return true
   } else if (cellTwo.hasClass('circle') && cellFive.hasClass('circle') && cellEight.hasClass('circle')) {
-    showAMessage('o wins!')
+    alert('o wins!')
     console.log('winner!!')
-
     return true
   } else if (cellThree.hasClass('x') && cellSix.hasClass('x') && cellNine.hasClass('x')) {
-    showAMessage('x wins!')
+    alert('x wins!')
     console.log('winner!!')
-
     return true
   } else if (cellThree.hasClass('circle') && cellSix.hasClass('circle') && cellNine.hasClass('circle')) {
-    showAMessage('o wins!')
+    alert('o wins!')
     console.log('winner!!')
-
     return true
   } else {
     console.log('no winner')
