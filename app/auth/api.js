@@ -8,7 +8,7 @@ const store = require("../store")
 // Include formData object that includes email, pw, confirm_pw
 const signUp = (data) => {
   return $.ajax({
-    url: `https://tic-tac-toe-api-development.herokuapp.com/sign-up`,
+    url: `${config.apiUrl}/sign-up`,
     method: "POST",
     data: data,
   })
@@ -16,7 +16,7 @@ const signUp = (data) => {
 
 const signout = () => {
   return $.ajax({
-    url: 'https://tic-tac-toe-api-development.herokuapp.com/sign-out',
+    url: `${config.apiUrl}/sign-out`,
     method: 'DELETE',
     headers: {
       authorization: `Bearer ${store.user.token}`
@@ -26,7 +26,7 @@ const signout = () => {
 
 const signIn = (data) => {
   return $.ajax({
-    url: "https://tic-tac-toe-api-development.herokuapp.com/sign-in",
+    url: `${config.apiUrl}/sign-in`,
     method: "POST",
     data: data
   })
@@ -34,7 +34,7 @@ const signIn = (data) => {
 
 const getToken = (data) => {
   return $.ajax({
-    url: 'https://tic-tac-toe-api-development.herokuapp.com/sign-in',
+    url: `${config.apiUrl}/sign-in`,
     method: "POST",
     data: data
   })
