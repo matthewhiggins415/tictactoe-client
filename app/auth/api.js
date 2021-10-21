@@ -32,17 +32,8 @@ const signIn = (data) => {
   })
 }
 
-const getToken = (data) => {
-  return $.ajax({
-    url: `${config.apiUrl}/sign-in`,
-    method: "POST",
-    data: data
-  })
-}
-
 module.exports = {
   signUp,
   signIn,
   signout,
-  getToken
 }

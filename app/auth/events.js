@@ -12,7 +12,7 @@ const onSignUp = function (event) {
   const form = event.target
   const formData = getFormFields(form)
   api.signUp(formData).then(ui.signUpSuccess).catch(ui.signUpFailure)
-  api.getToken(formData).then(ui.getTokenSuccess).catch(ui.getTokenFailure)
+  form.reset()
 }
 
 const onSignIn = (event) => {
@@ -20,7 +20,7 @@ const onSignIn = (event) => {
   const form = event.target
   const formData = getFormFields(form)
   api.signIn(formData).then(ui.signInSuccess).catch(ui.signInFailure)
-  
+  form.reset()
 }
 
 const onLogout = () => {

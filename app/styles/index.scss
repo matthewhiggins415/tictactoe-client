@@ -31,20 +31,22 @@
   border-radius: 25px;
 }
 
-.players {
-  background-color: white;
+.message {
+  background-color: transparent;
+  position: absolute;
+  width: 100vw;
   display: flex;
-  justify-content: space-evenly;
-  width: 50vw;
-  border-radius: 25px;
+  margin: 30px auto;
+  justify-content: center;
+  align-items: center;
 }
 
-.player{
- text-transform: uppercase;
- font-weight: 600;
- font-size: larger;
- color: tomato;
+.message p {
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
 }
+
 
 .new-game-btn {
   width: 50%;
@@ -64,8 +66,8 @@
 }
 
 .board {
-  width: 50vw;
-  height: 50vh;
+  width: 40vw;
+  height: 40vh;
   display: grid;
   margin: 50px auto;
   justify-content: center;

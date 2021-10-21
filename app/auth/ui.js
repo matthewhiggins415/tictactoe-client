@@ -1,7 +1,7 @@
 // require the store object
 const store = require("../store.js")
 
-const messageElement = $("#message")
+const messageElement = $("#message p")
 
 const showAMessage = (message) => {
   messageElement.text(`${message}`)
@@ -13,33 +13,24 @@ const showAMessage = (message) => {
 const signUpSuccess = (responseData) => {
   console.log(responseData)
   $("#signup-view").fadeOut()
-  $("#board-view").fadeIn()
+  $("#signin-view").fadeIn()
   showAMessage("Sign up successful!")
 }
 
 const signUpFailure = (error) => {
   console.log(error)
-  // print error to message on signup view.
+  showAMessage("Sign up failure!")
 }
 
 const signOutSuccess = () => {
   $("#board-view").fadeOut()
-  $("#signup-view").fadeOut()
-  $("#signin-view").fadeIn()
+  $("#signin-view").fadeOut()
+  $("#signup-view").fadeIn()
+  showAMessage("Log out successful!")
 }
 
 const signOutFailure = (error) => {
-  console.log(error.message)
-}
-
-const getTokenSuccess = (responseData) => {
-  let token = responseData.user.token
-  store.user.token = token
-  console.log(store)
-}
-
-const getTokenFailure = (error) => {
-  console.log(error.message)
+  showAMessage("Sign out failure!")
 }
 
 const signInSuccess = (responseData) => {
@@ -51,7 +42,7 @@ const signInSuccess = (responseData) => {
 }
 
 const signInFailure = (error) => {
-  console.log(error)
+  showAMessage("Sign in failure!")
 }
 
 module.exports = {
@@ -61,7 +52,5 @@ module.exports = {
   signOutSuccess,
   signOutFailure,
   signInSuccess,
-  signInFailure,
-  getTokenSuccess,
-  getTokenFailure
+  signInFailure
 }

@@ -3,15 +3,6 @@ const ui = require('./auth/ui.js')
 const xClass = 'x';
 const oClass = 'circle';
 
-const messageElement = $("#message")
-
-const showAMessage = (message) => {
-  messageElement.text(`${message}`)
-  setTimeout(function() {
-    messageElement.remove()
-  }, 6000)
-}
-
 let cellOne = $("#spaceOne")
 let cellTwo = $("#spaceTwo")
 let cellThree = $("#spaceThree")
@@ -102,7 +93,8 @@ cellNine.one('click', handleClick)
 
 const checkWin = () => {
   if (cellOne.hasClass('x') && cellTwo.hasClass('x') && cellThree.hasClass('x')){
-    alert('x wins!')
+    ui.showAMessage("X wins")
+    // alert('x wins!')
     console.log('winner!!')
     return true
   } else if (cellOne.hasClass('circle') && cellTwo.hasClass('circle') && cellThree.hasClass('circle')) {
