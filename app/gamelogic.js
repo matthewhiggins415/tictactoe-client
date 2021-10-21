@@ -93,7 +93,7 @@ cellNine.one('click', handleClick)
 
 const checkWin = () => {
   if (cellOne.hasClass('x') && cellTwo.hasClass('x') && cellThree.hasClass('x')){
-    ui.showAMessage("X wins")
+    alert("X wins")
     // alert('x wins!')
     console.log('winner!!')
     return true

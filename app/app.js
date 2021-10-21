@@ -2,7 +2,6 @@
 // const example = require('./example')
 
 const authEvents = require("./auth/events")
-const gameEvents = require("./gamelogic")
 
 // use require without a reference to ensure a file is bundled
 // require('./example')
@@ -31,8 +30,8 @@ $(() => {
   // login
   $("#signin-form").on('submit', authEvents.onSignIn)
 
-  // clr board
-  $("#new-game-btn").on('click',gameEvents.clearBoard)
+  // newgame board
+  $("#new-game-btn").on('click',authEvents.onNewGame)
 
   // logout
   $("#logout-btn").on('click', authEvents.onLogout)

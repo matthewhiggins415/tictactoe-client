@@ -1,6 +1,7 @@
 const getFormFields = require("../../lib/get-form-fields")
 const api = require("./api.js")
 const ui = require("./ui.js")
+const gameLogic = require('../gamelogic')
 
 // Prevent page refresh upon submit
 // Get the form in a variable by accessing event object
@@ -23,6 +24,11 @@ const onSignIn = (event) => {
   form.reset()
 }
 
+const onNewGame = () => {
+  gameLogic.clearBoard()
+  api.createGame().then(ui.newGameSuccess).catch(ui.newGameFailure)
+}
+
 const onLogout = () => {
   api.signout().then(ui.signOutSuccess).catch(ui.signOutFailure)
 }
@@ -30,5 +36,6 @@ const onLogout = () => {
 module.exports = {
   onSignUp,
   onSignIn,
-  onLogout
+  onLogout,
+  onNewGame
 }

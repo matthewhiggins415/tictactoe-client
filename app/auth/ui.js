@@ -1,7 +1,7 @@
 // require the store object
 const store = require("../store.js")
 
-const messageElement = $("#message p")
+const messageElement = $("#message")
 
 const showAMessage = (message) => {
   messageElement.text(`${message}`)
@@ -45,6 +45,14 @@ const signInFailure = (error) => {
   showAMessage("Sign in failure!")
 }
 
+const newGameSuccess = () => {
+  showAMessage("New game created")
+}
+
+const newGameFailure = () => {
+  showAMessage("New game failure")
+}
+
 module.exports = {
   showAMessage,
   signUpSuccess,
@@ -52,5 +60,7 @@ module.exports = {
   signOutSuccess,
   signOutFailure,
   signInSuccess,
-  signInFailure
+  signInFailure,
+  newGameSuccess,
+  newGameFailure
 }

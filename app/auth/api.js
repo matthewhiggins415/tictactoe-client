@@ -32,8 +32,19 @@ const signIn = (data) => {
   })
 }
 
+const createGame = (data) => {
+  return $.ajax({
+    url: `${config.apiUrl}/games`,
+    method: "POST",
+    headers: {
+      authorization: `Bearer ${store.user.token}`
+    }
+  })
+}
+
 module.exports = {
   signUp,
   signIn,
   signout,
+  createGame
 }
