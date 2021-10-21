@@ -98,55 +98,55 @@ const checkWin = () => {
     console.log('winner!!')
     return true
   } else if (cellOne.hasClass('circle') && cellTwo.hasClass('circle') && cellThree.hasClass('circle')) {
-    alert('o wins!')
+    ui.showAMessage('o wins!')
     console.log('winner!!')
     return true
   } else if (cellFour.hasClass('x') && cellFive.hasClass('x') && cellSix.hasClass('x')) {
-    alert('x wins!')
+    ui.showAMessage('x wins!')
     console.log('winner!!')
     return true
   } else if (cellFour.hasClass('circle') && cellFive.hasClass('circle') && cellSix.hasClass('circle')) {
-    alert('o wins!')
+    ui.showAMessage('o wins!')
     console.log('winner!!')
     return true
   } else if (cellSeven.hasClass('x') && cellEight.hasClass('x') && cellNine.hasClass('x')) {
-    alert('x wins!')
+    ui.showAMessage('x wins!')
     console.log('winner!!')
     return true
   } else if (cellSeven.hasClass('circle') && cellEight.hasClass('circle') && cellNine.hasClass('circle')) {
-    alert('o wins!')
+    ui.showAMessage('o wins!')
     console.log('winner!!')
     return true
   } else if (cellOne.hasClass('x') && cellFive.hasClass('x') && cellNine.hasClass('x')) {
-    alert('x wins!')
+    ui.showAMessage('x wins!')
     console.log('winner!!')
     return true
   } else if (cellOne.hasClass('circle') && cellFive.hasClass('circle') && cellNine.hasClass('circle')) {
-    alert('o wins!')
+    ui.showAMessage('o wins!')
     console.log('winner!!')
     return true
   } else if (cellOne.hasClass('x') && cellFour.hasClass('x') && cellSeven.hasClass('x')) {
-    alert('x wins!')
+    ui.showAMessage('x wins!')
     console.log('winner!!')
     return true
   } else if (cellOne.hasClass('circle') && cellFour.hasClass('circle') && cellSeven.hasClass('circle')) {
-    alert('o wins!')
+    ui.showAMessage('o wins!')
     console.log('winner!!')
     return true
   } else if (cellTwo.hasClass('x') && cellFive.hasClass('x') && cellEight.hasClass('x')) {
-    alert('x wins!')
+    ui.showAMessage('x wins!')
     console.log('winner!!')
     return true
   } else if (cellTwo.hasClass('circle') && cellFive.hasClass('circle') && cellEight.hasClass('circle')) {
-    alert('o wins!')
+    ui.showAMessage('o wins!')
     console.log('winner!!')
     return true
   } else if (cellThree.hasClass('x') && cellSix.hasClass('x') && cellNine.hasClass('x')) {
-    alert('x wins!')
+    ui.showAMessage('x wins!')
     console.log('winner!!')
     return true
   } else if (cellThree.hasClass('circle') && cellSix.hasClass('circle') && cellNine.hasClass('circle')) {
-    alert('o wins!')
+    ui.showAMessage('o wins!')
     console.log('winner!!')
     return true
   } else {
