@@ -4,9 +4,9 @@ const store = require("../store.js")
 const messageElement = $("#message")
 
 const showAMessage = (message) => {
-  messageElement.text(`${message}`)
+  messageElement.text(`${message}`).show()
   setTimeout(function () {
-    messageElement.remove()
+    messageElement.hide()
   }, 3000)
 }
 
