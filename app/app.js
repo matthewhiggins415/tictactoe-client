@@ -31,10 +31,10 @@ $(() => {
   // login
   $("#signin-form").on('submit', authEvents.onSignIn)
 
-  // chngePw
+  // clr board
+  $("#new-game-btn").on('click',gameEvents.clearBoard)
 
   // logout
   $("#logout-btn").on('click', authEvents.onLogout)
 
-  //board interactions
 })

@@ -1,7 +1,5 @@
 const getFormFields = require("../../lib/get-form-fields")
-
 const api = require("./api.js")
-
 const ui = require("./ui.js")
 
 // Prevent page refresh upon submit
