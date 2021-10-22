@@ -4,7 +4,7 @@ Users must sign-up to play. This project has sign-up & sign-in views which lead 
 
 # WireFrame 
 
-![alt text](https://imgur.com/a/xjusbqD)
+[Let's see the wireframe!!](https://imgur.com/gallery/xjusbqD)
 
 #User Story
 
