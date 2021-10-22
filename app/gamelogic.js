@@ -20,12 +20,21 @@ const board = $('#board')
 const startGame = () => {
   showOutline()
   addFunc()
+  gameCount = 0
 }
+
+let gameCount
 
 const showOutline = () => {
   board.removeClass(`${xClass}`)
   board.removeClass(`${oClass}`)
   circleTurn ? board.addClass(`${oClass}`) : board.addClass(`${xClass}`)
+}
+
+const checkTie = () => {
+  if (gameCount === 9 && checkWin() === false) {
+    return true
+  }
 }
 
 const changeTurn = () => {
@@ -71,10 +80,12 @@ const handleClick = (e) => {
   if (checkWin()){
     endGame()
   }
-  //determine tie
+
+  gameCount++
+
   if (checkTie()) {
     endGame()
-    alert('Tie Game!')
+    ui.showAMessage('Tie Game!')
   }
 }
 
@@ -151,14 +162,6 @@ const checkWin = () => {
     return true
   } else {
     console.log('no winner')
-    return false
-  }
-}
-
-const checkTie = () => {
-  if (cellOne.hasClass('x' || 'circle') && cellTwo.hasClass('x' || 'circle') && cellThree.hasClass('x' || 'circle') && cellFour.hasClass('x' || 'circle') && cellFive.hasClass('x' || 'circle') && cellSix.hasClass('x' || 'circle') && cellSeven.hasClass('x' || 'circle') && cellEight.hasClass('x' || 'circle') && cellNine.hasClass('x' || 'circle')){
-    return true
-  } else {
     return false
   }
 }
