@@ -1,0 +1,288 @@
+// @import '~bootstrap/scss/bootstrap';
+*{
+  box-sizing: border-box;
+}
+
+//Create variable for each space.
+:root {
+  --space-size: 100px;
+  --mark-size: calc(var(--space-size) * .9)
+}
+
+.board-view {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background-color: rgb(255, 246, 246);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.board-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 3px 3px 5px tomato;
+  height: auto;
+  width: 50vw;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+
+.message {
+  background-color: transparent;
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  margin: 30px auto;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+.new-game-btn {
+  width: 50%;
+  margin: 5px auto;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: white;
+  transition: 200ms ease-in-out;
+  padding: 15px;
+}
+
+.new-game-btn:hover{
+  cursor: pointer;
+  background-color: tomato;
+  border: 1px solid tomato;
+  color: white;
+}
+
+.board {
+  width: 40vw;
+  height: 40vh;
+  display: grid;
+  margin: 50px auto;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, auto);
+}
+
+.space {
+  border: 1px solid black;
+  width: var(--space-size);
+  height: var(--space-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.space:first-child,
+.space:nth-child(2),
+.space:nth-child(3) {
+  border-top: none;
+}
+
+.space:nth-child(7),
+.space:nth-child(8),
+.space:nth-child(9) {
+  border-bottom: none;
+}
+
+.space:first-child,
+.space:nth-child(4),
+.space:nth-child(7) {
+  border-left: none;
+}
+
+.space:nth-child(3),
+.space:nth-child(6),
+.space:nth-child(9) {
+  border-right: none;
+}
+
+.space.x, .space.circle {
+  cursor: not-allowed;
+}
+
+.space.x::before,
+.space.x::after,
+.board.x .space:not(.x):not(.circle):hover::before,
+.board.x .space:not(.x):not(.circle):hover:after
+{
+  position: absolute;
+  content: "";
+  width: calc(var(--mark-size) * .15);
+  height: var(--mark-size);
+  background-color: tomato;
+}
+
+.space.x::before,
+.board.x .space:not(.x):not(.circle):hover::before {
+  transform: rotate(45deg);
+}
+
+.space.x::after,
+.board.x .space.space:not(.circle):not(.x):hover::after {
+  transform: rotate(-45deg);
+}
+
+.board.x .space:not(.x):not(.circle):hover::before,
+.board.x .space:not(.x):not(.circle):hover::after,
+.board.circle .space:not(.circle):not(.x):hover::before,
+.board.circle .space:not(.circle):not(.x):hover::after
+{
+  background-color: rgb(251, 205, 191);
+}
+
+.space.circle::before,
+.space.circle::after{
+  background-color: tomato;
+}
+
+
+.space.circle::before,
+.space.circle::after,
+.board.circle .space:not(.circle):not(.x):hover::before,
+.board.circle .space:not(.circle):not(.x):hover::after
+{
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+
+.space.circle::before,
+.board.circle .space:not(.circle):not(.x):hover::before {
+  width: var(--mark-size);
+  height: var(--mark-size);
+}
+
+.space.circle::after,
+.board.circle .space:not(.circle):not(.x):hover::after
+{
+  width: calc(var(--mark-size) * .7);
+  height: calc(var(--mark-size) * .7);
+  background-color: white;
+}
+
+
+.logout-btn {
+  padding: 15px;
+  width: 50%;
+  margin: 30px auto;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: white;
+  transition: 200ms ease-in-out;
+}
+
+.logout-btn:hover{
+  cursor: pointer;
+  background-color: tomato;
+  border: 1px solid tomato;
+  color: white;
+}
+
+.login-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(255, 247, 246);
+}
+
+.login-view h2 {
+  text-align: center;
+  color: black;
+  letter-spacing: 1.5px;
+}
+
+.login-form{
+  width: 30%;
+  min-width: 420px;
+  max-width: 430px;
+  min-height: 400px;
+  max-height: 480px;
+  height: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 3px 5px tomato;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+  transition: 300ms ease-in-out;
+  background-color: white;
+}
+
+.login-form:hover {
+  box-shadow: 5px 5px 9px tomato;
+  transform: scale(1.01);
+}
+
+.login-input {
+  width:50%;
+  padding: 15px;
+  margin: 10px auto;
+  border-radius: 10px;
+   border: 1px solid black;
+   transition: 200ms ease-in-out;
+}
+
+input:focus {
+  border: 1px solid tomato;
+  outline: none;
+}
+
+input[type="password"], input[type="email"] {
+  color: tomato;
+}
+
+input:valid {
+  border: 1px solid tomato
+}
+
+.signup-button {
+  padding: 15px;
+  width: 50%;
+  margin: 10px auto;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: white;
+  transition: 200ms ease-in-out;
+}
+.signup-button:hover{
+  cursor: pointer;
+  background-color: tomato;
+  border: 1px solid tomato;
+  color: white;
+}
+
+
+.to-otherpage-button {
+  position: relative;
+  top: -38px;
+  width: fit-content;
+  margin: 0 auto;
+  background-color: white;
+  padding: 2px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.to-otherpage-button:hover{
+  color: tomato;
+}
+
+.to-otherpage-button:hover {
+  border-bottom: 1px solid tomato;
+}

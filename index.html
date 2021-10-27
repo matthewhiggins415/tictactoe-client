@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Example</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+      <p class="message" id="message"></p>
+      <section class="board-view" id="board-view">
+        <div class="board-container">
+          <div class="board" id="board">
+            <div class="space" id="spaceOne">
+            </div>
+            <div class="space" id="spaceTwo">
+            </div>
+            <div class="space" id="spaceThree">
+            </div>
+            <div class="space" id="spaceFour">
+            </div>
+            <div class="space" id="spaceFive">
+            </div>
+            <div class="space" id="spaceSix">
+            </div>
+            <div class="space" id="spaceSeven">
+            </div>
+            <div class="space" id="spaceEight">
+            </div>
+            <div class="space" id="spaceNine">
+            </div>
+          </div>
+          <button class="new-game-btn" id="new-game-btn">New Game</button>
+          <button class="logout-btn" id="logout-btn">
+            Logout
+          </button>
+        </div>
+      </section>
+
+      <section id="signup-view" class="login-view">
+        <form class="login-form" id="signup-form">
+          <h2>Sign up to play</h2>
+          <input class="login-input" name="credentials[email]" placeholder="email" type="email" required>
+          <input class="login-input" name="credentials[password]" placeholder="password" type="password" required>
+          <input class="login-input" name="credentials[password_confirmation]" placeholder="confirm password" type="password" required>
+          <button class="signup-button" id="signup-button">Register</button>
+        </form>
+        <button class="to-otherpage-button" id="toLoginBtn">Existing member? Login</button>
+      </section>
+
+      <section id="signin-view" class="login-view">
+        <form id="signin-form" class="login-form">
+          <h2>Sign in to play</h2>
+          <input id="signin-input" class="login-input" name="credentials[email]" placeholder="email" type="email" required>
+          <input id="signin-input" class="login-input" name="credentials[password]" placeholder="password" type="password" required>
+          <button id="signin-button" class="signup-button">Sign In</button>
+        </form>
+        <button class="to-otherpage-button" id="toSigninBtn">New member? Sign Up</button>
+      </section>
+    </body>
+</html>
